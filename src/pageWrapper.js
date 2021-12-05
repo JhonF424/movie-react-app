@@ -111,31 +111,15 @@ export default function pageWrapper(props) {
                                     <a href="#page-top"></a>
                                 </li>
                                 <li className="dropdown first">
-                                    <a className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
-                                        Home <i className="fa fa-angle-down" aria-hidden="true"></i>
+                                    <a href="/" className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+                                        HOME
                                     </a>
-                                    <ul className="dropdown-menu level1">
-                                        <li><a href="index-2.html">Home 01</a></li>
-                                        <li><a href="homev2.html">Home 02</a></li>
-                                        <li><a href="homev3.html">Home 03</a></li>
-                                    </ul>
+                                    
                                 </li>
                                 <li className="dropdown first">
-                                    <a className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                        movies<i className="fa fa-angle-down" aria-hidden="true"></i>
+                                    <a href="/blog" className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                                        BLOG
                                     </a>
-                                    <ul className="dropdown-menu level1">
-                                        <li className="dropdown">
-                                            <a href="#" className="dropdown-toggle" data-toggle="dropdown" >Movie grid<i className="ion-ios-arrow-forward"></i></a>
-                                            <ul className="dropdown-menu level2">
-                                                <li><a href="moviegrid.html">Movie grid</a></li>
-                                                <li><a href="moviegridfw.html">movie grid full width</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="movielist.html">Movie list</a></li>
-                                        <li><a href="moviesingle.html">Movie single</a></li>
-                                        <li className="it-last"><a href="seriessingle.html">Series single</a></li>
-                                    </ul>
                                 </li>
                                 <li className="dropdown first">
                                     <a className="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
@@ -221,7 +205,7 @@ export default function pageWrapper(props) {
                     <div className="row ipad-width2">
                         <div className="col-md-8 col-sm-12 col-xs-12">
                             <div className="topbar-filter">
-                                <p>Found <span>1,608 movies</span> in total</p>
+                                <p>Found <span>{props.total}</span> in total</p>
                                 <label>Sort by:</label>
                                 <select>
                                     <option value="popularity">Popularity Descending</option>
