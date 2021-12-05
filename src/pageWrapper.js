@@ -2,27 +2,27 @@ export default function pageWrapper(props) {
     return (
         <div>
             <div id="preloader">
-                <img classNameName="logo" src="images/logo1.png" alt="" width="119" height="58" />
+                <img className="logo" src="images/logo1.png" alt="" width="119" height="58" />
                 <div id="status">
                     <span></span>
                     <span></span>
                 </div>
             </div>
 
-            <div classNameName="login-wrapper" id="login-content">
+            <div className="login-wrapper" id="login-content">
                 <div className="login-content">
                     <a href="#" className="close">x</a>
                     <h3>Login</h3>
                     <form method="post" action="#">
                         <div className="row">
-                            <label for="username">
+                            <label htmlFor="username">
                                 Username:
                                 <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
                             </label>
                         </div>
 
                         <div className="row">
-                            <label for="password">
+                            <label htmlFor="password">
                                 Password:
                                 <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                             </label>
@@ -56,26 +56,26 @@ export default function pageWrapper(props) {
                     <h3>sign up</h3>
                     <form method="post" action="#">
                         <div className="row">
-                            <label for="username-2">
+                            <label htmlFor="username-2">
                                 Username:
                                 <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
                             </label>
                         </div>
 
                         <div className="row">
-                            <label for="email-2">
+                            <label htmlFor="email-2">
                                 your email:
                                 <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                             </label>
                         </div>
                         <div className="row">
-                            <label for="password-2">
+                            <label htmlFor="password-2">
                                 Password:
                                 <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                             </label>
                         </div>
                         <div className="row">
-                            <label for="repassword-2">
+                            <label htmlFor="repassword-2">
                                 re-type Password:
                                 <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                             </label>
@@ -238,19 +238,7 @@ export default function pageWrapper(props) {
 
                             {props.children}
 
-                            <div className="topbar-filter">
-                                <label>Movies per page:</label>
-                                <select>
-                                    <option value="range">5 Movies</option>
-                                    <option value="saab">10 Movies</option>
-                                </select>
-                                <div className="pagination2">
-                                    <span>Page 1 of 2:</span>
-                                    <a className="active" href="#">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#"><i className="ion-arrow-right-b"></i></a>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div className="col-md-4 col-sm-12 col-xs-12">
                             <div className="sidebar">
